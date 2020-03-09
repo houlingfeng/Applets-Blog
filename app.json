@@ -1,0 +1,27 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/detail/detail",
+    "pages/movies/movies",
+    "pages/moviesDetail/moviesDetail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#489B81",
+    "navigationBarTitleText": "welcome to lizhi",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "text": "文字"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "电影"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap92.json"
+}

@@ -1,0 +1,23 @@
+<!--pages/detail/detail.wxml-->
+<view class="detailContainer">
+  <image class="headImg " src="{{isMusicPlay?detailObj.muscic.imageUrl:detailObj.avatar}}"></image>
+  <text catchtap="handleMusicPlay" wx:if="{{!isMusicPlay}}" class="play">播放</text>
+  <text catchtap="handleMusicPlay" wx:if="{{isMusicPlay}}" class="play">暂停</text>
+  <view class="avatar_date">
+    <image src="{{detailObj.avatar}}"></image>
+    <text>{{detailObj.title}}</text>
+    <text>发布于</text>
+    <text>{{detailObj.date}}</text>
+  </view>
+  <text class="company">{{detailObj.title}}</text>
+  <view class="collection_share_container">
+    <view class="collection_share">
+      <text catchtap="hanleCollection" class="tex" wx:if="{{!isCollected}}">收藏</text>
+      <text catchtap="hanleCollection" wx:if="{{isCollected}}">收藏</text>
+      <text catchtap="handleShare">分享</text>
+    </view>
+    <view class="line"></view>
+  </view>
+  <button open-type="share">转发</button>
+  <text class="content">{{detailObj.detail_content}}</text>
+</view>
